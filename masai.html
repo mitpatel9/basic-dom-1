@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>shikshanagari education application</h1>
+    <p>Enter your name and gender for shikshanagari education</p>
+    <h2 id="display"></h2>
+    <input id="fname" type="text" placeholder="enter your name">
+    <select name="" id="gen">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <button onclick="show()">Apply</button>
+</body>
+</html>
+<script>
+    function show(){
+        let name= document.getElementById("fname").value;
+        let yourgen=document.getElementById("gen").value;
+        document.getElementById("display").innerText="your name is "+name+" and gender is "+ yourgen;
+        alert('thank you')
+    }
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring bell</title>
+</head>
+
+<body>
+    <p id="display">click on and login continiue...</p>
+    <button onclick="login()">Log In</button>
+    <button onclick="logout()">Log out</button>
+   
+
+</body>
+
+</html>
+<script>
+    function login(){
+         document.getElementById("display").innerText="login sucssesfully";
+    }
+    function logout(){
+        document.getElementById("display").innerText="logout sucssesfully";
+    }
+</script>
